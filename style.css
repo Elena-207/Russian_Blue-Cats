@@ -1,0 +1,386 @@
+
+@font-face {
+    font-family: Explora-Regular;
+    src: url(../fonts/Explora-Regular.ttf);
+}
+@font-face {
+    font-family: CinzelDecorative-Black;
+    src: url(../fonts/CinzelDecorative-Black.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+   /*  background-color: #CFD1CF; */
+   background-image: url(./img/img-noise-361x370.png);
+    
+}
+
+/* NAV BAR */
+
+nav{
+    margin: 2rem;
+}
+
+.nav-item {
+    background-color: rgba(61, 165, 115, 0.607);
+    border: 2px groove rgb(4, 8, 4);
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 3px rgba(0,0,0,0.95);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(3, 3, 3);
+    font-size: 20px;
+    font-weight: bolder;
+    text-shadow: -1px 0 rgba(7, 5, 5, 0.856), 0 -1px white;
+}
+
+nav .nav-item:hover{
+    background-color: rgb(66, 148, 121);
+    text-shadow: none;
+}
+
+.navbar-toggler-icon {
+    height: 20px;
+    width: 200px;
+}
+/* HERO */
+
+.hero-img{
+    width: 100%;
+    background-image: url(./img/gallery/Russian-Blue.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 36rem;
+    font-family: Explora-Regular;
+    font-size: 16rem;
+    font-weight:700;
+    text-shadow: 3px 3px 3px black;
+    color: white;
+    
+}
+
+/* Content */
+.first-img{
+    margin: 2rem 2rem;
+}
+.text{
+    width: 800px;
+    margin: auto;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+ }
+ 
+ h2{
+     font-family: CinzelDecorative-Black ;
+     font-size: 40px;
+     margin-top: 4rem;
+     margin-bottom: 40px;
+ }
+ 
+ h3{
+     font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+
+
+ /* gif paws */
+ #gif{        
+    width: 50px;
+    height: 50px;
+}
+
+/* Button Go to top */
+.go-top{
+    background-color: rgba(61, 165, 115, 0.607);
+    border: 2px groove rgb(4, 8, 4);
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 3px rgba(0,0,0,0.95);
+    text-align: center;
+    padding: 5px;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+a{
+    text-decoration: none;
+    color: rgb(36, 33, 33);
+    font-weight: bold;
+}
+
+
+/* Gallery */
+
+#gallery first{
+    display: flex;
+}
+
+#gallery img{
+    width: 300px;
+    height: auto;
+    border: 5px black groove;
+    box-shadow: 0px 0px 8px 3px rgba(0,0,0,0.95);
+    margin: 50px;
+    border-radius: 10px;
+  
+}
+
+#gallery{
+    text-align: center;
+}
+
+#gallery img:hover {
+    transform: scale(1.7);
+    filter: grayscale(0) brightness(1);  
+}
+ .first{
+    margin-left: 2.2rem;
+   }
+
+ .first img {
+    cursor: pointer;
+    filter: grayscale(1) brightness(0.5);
+    transition: 0.3s linear;
+
+}
+
+
+
+/* Responsive Smaller Devices max 480px */
+
+@media screen and (max-width:480px){
+    .hero-img{
+        width: 30rem;
+        height: 5rem;
+        background-position: center top 30%;
+    }
+  
+    .title{
+        display: block;
+        font-size: 4rem;
+        padding-top: 0;
+    }
+    .text{
+        width: 400px;
+        font-size: 4vw;
+        margin: 0 2rem; 
+    }
+    .video{
+        width: 100%;
+    } 
+    .navbar{
+        margin-top: 0;
+
+    }
+    .nav-item a{
+      color: #CFD1CF;
+      background-color: rgb(48, 44, 44);
+      text-shadow: none;
+      padding: 0.3rem 2rem;
+    
+    }
+    .navbar-toggler{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+    }
+   h2{
+    padding: 1rem;
+    margin: 0;
+    font-size: 2.2rem;
+   }
+   .home-title{
+    display: none;
+   }
+   #catread, #catonbook, #catball{
+    width: 10rem;
+   }
+   
+   #fun, #kitty, #facts{
+    width: 15rem;
+   }
+   #gif{
+    width: 20px;
+    height: 10px;
+   }
+}
+
+/* Responsive Small Devices 481px-768px -smartphone*/
+
+@media (min-width:481px) and (max-width:768px) {
+   .hero-img{
+      width: 100%;
+      height: 30vh;
+      background-position: center top 35%;
+   }
+   
+    h1.home-title{
+        display: none;
+       }
+
+   .title{
+        display: block;
+        font-size: 5rem;
+        padding-top: 0;
+    }
+    .nav-item {
+        background-color: rgb(73, 58, 58);
+        text-shadow: none;
+        padding: 0.3rem 2rem;
+        font-size: 1.5rem;
+      }
+      .nav-item a{color: antiquewhite;}
+      .navbar-toggler{
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border: none;
+      }
+      .text{
+        width: 90%;
+        font-size: 2.5vw;
+        padding: 0 3rem;
+    }
+       #catread, #catonbook, #catball{
+        width: 10rem;
+       }
+       
+       #fun, #kitty, #facts{
+        width: 15rem;
+       }
+       
+       #gif{
+        width: 20px;
+        height: 10px;
+       }
+}
+
+
+/* Responsive Medium Devices 769px-993px -tablet */
+
+@media (min-width:769px) and (max-width:993px) {
+    .hero-img{
+       width: 100%;
+       height: 30vh;
+       background-position: center top 35%;
+    }
+    
+     h1.home-title{
+         display: none;
+        }
+        .title{
+            display: block;
+            font-size: 5rem;
+            padding-top: 0;
+        }
+        .nav-item {
+            background-color: rgb(82, 78, 78);
+            text-shadow: none;
+            padding: 0.3rem 2rem;
+          
+          }
+          .nav-item a{color: antiquewhite;}
+          .navbar-toggler{
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              border: none;
+              
+          }
+       .nav-item {
+        font-size: 1.8rem;
+    }
+       .text{
+         width: 90%;
+         font-size: 3vw;
+         padding: 0 3rem;
+     }
+        #catread, #catonbook, #catball{
+         width: 10rem;
+        }
+        
+        #fun, #kitty, #facts{
+         width: 15rem;
+        }
+        
+        #gif{
+         width: 20px;
+         height: 10px;
+        }
+ }
+
+
+ /* Responsive Large Devices 994px-1200px  -laptop */
+
+@media (min-width:994px) and (max-width:1119px) {
+   
+    .nav-item a {
+      font-size: 1rem;
+    }
+    
+    nav .nav-item:hover{
+        background-color: rgb(66, 148, 121);
+        text-shadow: none;
+    }
+
+    h2{
+        font-size: 4rem;
+    }
+    #catread, #catonbook, #catball{
+        width: 10rem;
+       }
+       
+    .text{
+        width: 90%;
+        font-size: 2.5vw;
+        padding: 0 3rem;
+    }
+    .go-top{
+        margin-top: 11rem;
+       }
+}
+@media (min-width:1120px) {
+    .nav-item a {
+        font-size: 1rem;
+      }
+      h2{
+        font-size: 4rem;
+    }
+    }
+
+
+/* Responsive Extra Large Devices 1200px + -monitor*/
+
+@media (min-width:1200px) {
+    .nav-item a {
+        font-size: 1.2rem;
+      }
+    .text{
+        width: 90%;
+        font-size: 2vw;
+        padding: 0 3rem;
+    }
+    h2{
+        font-size: 5rem;
+    }
+
+   
+}
